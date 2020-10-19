@@ -1,6 +1,6 @@
 const CustomError = require("../extensions/custom-error");
 
-module.exports = function repeater(/* str, options */) {
+module.exports = function repeater(str, options) {
   if (String(str) == 'null') str = 'null';
   if (String(options.addition) == 'null') options.addition = 'null';
   if (options.separator == null) options.separator = '+';
